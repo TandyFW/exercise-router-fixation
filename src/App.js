@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Home from './Home';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Home />
+        <Link to="./Home">Home</Link>
+        <Link to="./About">About</Link>
+        <Link to="./Users">Users</Link>
       </BrowserRouter>
     );
   }
